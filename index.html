@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- <div class="container" style="margin-bottom: 500px"> -->
+  <!-- ví dụ 1: tinh tri tuyêt dôi cửa 1 số dựa vào cấu truc if -->
+  <!-- VÍ DỤ 2
+ -->
+  <!-- <H3>ví dụ 2:tính trị tuyêt đối của 1 số </H3>
+    <div class="form-group">
+      <p>nhập vào 1 số </p>
+      <input class="form-control w-25" id="number1" />
+      <button id="btnTinhTriTuyetDoi" class="btn btn-success mt-2">tính trị tuyêt đối</button>
+
+    </div>
+    <div class="alert alert-success" id="ketQua">
+
+    </div>
+
+  </div> -->
+
+  <h3> ví dụ 2:in số lớn nhất trong hai số được nhập vào
+  </h3>
+
+  <div class="form-group row">
+    <div class="col-4">
+      <p>nhập số thứ nhất</p>
+      <input class="form-control w-25" id="numBer1" />
+
+    </div>
+    <div class="col-4">
+      <p>nhập số thứ hai</p>
+      <input class="form-control w-25" id="numBer2" />
+    </div>
+  </div>
+  <div class="mt-2 form-group">
+    <button class="btn btn-success" id="btnSoLonNhat">in sô lơn nhất </button>
+
+  </div>
+  <div class="alert alert-success" id="ketQua2">
+
+  </div>
+
+  <hr>
+  <h3>cho phép người dừng nhập vào điểm các môn toán, lý ,hóa tính điểm trung bình và xêp loại theo công thứ</h3>
+  <p class="alert alert-warning">
+    vđ: người dừng nhập vào 5 6 7 thì >> ĐTB=6 <br />
+    đtb bé hơn 5:in ra học lực yếu <br>
+    ĐTB lớn hơn =5 và bé hơn 6: in ra màn hình học lực trung bình <br>
+    ĐTB lơn hơn =6.5 và bé hơn =8; in ra học lực khá <br>
+    ĐTB lơn hơn =8 và bé hơn =10: in ra học lực giỏi <br>
+  </p>
+  <div class="mt-2 form-group row">
+    <div class="col-4">
+      <p>nhập điểm toán</p>
+      <input class="form-control" id="diemToan">
+
+    </div>
+    <div class="col-4">
+      <p>nhập điểm lý</p>
+      <input class="form-control" id="diemLy">
+
+    </div>
+    <div class="col-4">
+      <p>nhập điểm hóa</p>
+      <input class="form-control" id="diemHoa">
+
+    </div>
+    <div class="form-group mt-2">
+      <button class="btn btn-success" id="btnXepLoai">
+        Xếp Loại
+
+      </button>
+
+    </div>
+    <br>
+  </div>
+  <div class="alert alert-success w-50" id="ketQua3">
+  </div>
+  <br>
+  <h3>bài tập 1: viêt chương trinh cho pheo người dùng nhâp vào số giờ làm và lương/1h tinh tiền lương theo công thức
+    sau. lam quá 0h thì từ từ giờ thứ 41 lương gấp 1.5 lần</h3>
+  <p class="alert alert-danger">
+    -ví dụ người dùng nhập :40h và lương :100
+    <br>tiên lương=400
+    <br>người dùng nhập vào 45h và lương 100:
+    <br>tiên lương:400+(5*1.5*100)==>470
+
+  </p>
+  <div class="form-gruop row ">
+    <div class="col-4">
+      <p>Nhập số giờ làm</p>
+      <input class="form-control" id="soGioLam">
+
+    </div>
+    <div class="col-4">
+      <p>Nhập tiền lương/1h</p>
+      <input class="form-control" id="luongCB" />
+    </div>
+
+  </div>
+
+  <div class="form-group mt-2 justify-content-center">
+    <button class="btn btn-success " id="btnTinhLuong"> Tính Lương </button>
+
+  </div>
+
+  <div class="alert alert-warning" id="ketQua_bt1">
+  </div>
+  <hr />
+  <h3>chương trình cho phép người dừng nhập vào số lượng ,Đơn giá từng sản phẩm .yêu cầu tinh tổng tiền theo công thức
+    sau</h3>
+  <div class="alert alert-danger">
+    <p></p> nếu số lượng sản phẩm bé hơn hoặc bằng 50: tổng tiền= số lượng* đơn giá
+    nếu số lượng sp lơn hơn 50 và bé hơn 100 : tổng tiền =số lương * đơn giá giảm 8%
+    <br />
+    nếu số lượng lơn hơn 100: tổng tiền=số lương *đơn giá đươc giảm 12%
+    <br>
+
+  </div>
+  <div class="form-group row mt2">
+    <div class="col-4">
+      <p>tên Sản phẩm</p>
+      <input class="form-control " id="tenSanPham" />
+
+    </div>
+    <div class="col-4">
+      <p>số lượng</p>
+      <input class="form-control " id="soLuong" />
+
+    </div>
+    <div class="col-4">
+      <p>Đơn giá</p>
+      <input class="form-control " id="donGia" />
+
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" id="btnTinhTongTien">Tính Tổng Tiền
+    </button>
+  </div>
+  <div class="alert alert-primary" id="ketQua_bt2">
+  </div>
+
+
+
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript " src="./index.js"></script>
+</body>
+
+</html>
